@@ -2,6 +2,8 @@
 
 **Beautiful, ready-to-use personal homepage templates for everyone.**
 
+🌐 **Live Demo:** [https://huibinglin.github.io/my-easy-page/](https://huibinglin.github.io/my-easy-page/)
+
 A collection of clean, professional HTML templates for academics, professionals, and anyone who wants a simple personal homepage. No coding knowledge required - just download, edit, and publish!
 
 ## Why My Easy Page?
@@ -15,7 +17,7 @@ A collection of clean, professional HTML templates for academics, professionals,
 
 ## Quick Start
 
-1. **Browse** - Open `index.html` in your browser to preview all templates
+1. **Browse** - Visit [https://huibinglin.github.io/my-easy-page/](https://huibinglin.github.io/my-easy-page/) or open `index.html` in your browser to preview all templates
 2. **Choose** - Click on a template you like
 3. **Download** - Download the template folder (HTML + CSS files)
 4. **Edit** - Open HTML file in any text editor and replace example content with yours
@@ -92,7 +94,7 @@ Digital business card templates perfect for sharing contact information and soci
 
 ### Step 1: Preview Templates
 
-Open `index.html` in your web browser to see all templates with live previews.
+Visit [https://huibinglin.github.io/my-easy-page/](https://huibinglin.github.io/my-easy-page/) or open `index.html` in your web browser to see all templates with live previews.
 
 ### Step 2: Choose Your Template
 
