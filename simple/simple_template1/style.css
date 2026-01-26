@@ -1,0 +1,232 @@
+/* ================================
+   Simple Academic Homepage Template
+   ================================
+   
+   Minimalist academic-style design.
+   Clean, professional, and easy to customize.
+   
+   HOW TO CUSTOMIZE:
+   - Adjust font sizes and spacing
+   - Change colors and typography
+   - Modify section layouts
+   ================================ */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #ffffff;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header section */
+.header {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.header-right {
+    flex-shrink: 0;
+}
+
+.name {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+    letter-spacing: -0.5px;
+}
+
+.contact-info {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.contact-info a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.social-links a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+    object-fit: cover;
+    border: 1px solid #e0e0e0;
+}
+
+/* Section styling */
+.section {
+    margin-bottom: 35px;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.section-content {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.7;
+}
+
+.section-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section-list li {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.section-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #666;
+    font-weight: bold;
+}
+
+/* Publications list */
+.publications-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.publication-item {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    padding-left: 0;
+}
+
+.publication-links {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.publication-links a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.publication-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #999;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .header-right {
+        align-self: flex-start;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+
+    .contact-info {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 1.6rem;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .section-title {
+        font-size: 1.1rem;
+    }
+
+    .section-content,
+    .section-list li,
+    .publication-item {
+        font-size: 0.9rem;
+    }
+}

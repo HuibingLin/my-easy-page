@@ -1,0 +1,342 @@
+/* ================================
+   Simple Academic Homepage Template 5
+   ================================
+   
+   Left sidebar navigation design.
+   Clean layout with sidebar navigation.
+   
+   HOW TO CUSTOMIZE:
+   - Adjust sidebar width
+   - Change colors
+   - Modify spacing
+   ================================ */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #ffffff;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #f8f9fa;
+    border-right: 1px solid #e0e0e0;
+    padding: 40px 30px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar-content {
+    text-align: center;
+}
+
+.sidebar-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #ddd;
+}
+
+.sidebar-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+
+.sidebar-title {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.sidebar-affiliation {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.nav-link {
+    padding: 10px 15px;
+    color: #555;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.nav-link:hover {
+    background: #e9ecef;
+    color: #000;
+}
+
+.nav-link.active {
+    background: #333;
+    color: #fff;
+}
+
+.sidebar-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #666;
+    transition: color 0.2s ease;
+}
+
+.social-icon:hover {
+    color: #333;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 50px 60px;
+    max-width: 900px;
+}
+
+.content-section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.section-text {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.8;
+}
+
+/* Research list */
+.research-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.research-list li {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    padding-left: 0;
+}
+
+.research-list strong {
+    color: #1a1a1a;
+}
+
+/* Publications */
+.pub-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.pub-item:last-child {
+    border-bottom: none;
+}
+
+.pub-title {
+    font-size: 1.05rem;
+    color: #1a1a1a;
+    font-weight: 500;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.pub-authors {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.pub-venue {
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.pub-links {
+    display: flex;
+    gap: 10px;
+}
+
+.pub-links a {
+    font-size: 0.85rem;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.pub-links a:hover {
+    text-decoration: underline;
+}
+
+/* Education */
+.edu-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.edu-item:last-child {
+    border-bottom: none;
+}
+
+.edu-degree {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+.edu-school {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.edu-period {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 3px;
+}
+
+.edu-details {
+    font-size: 0.85rem;
+    color: #999;
+}
+
+/* Experience */
+.exp-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.exp-item:last-child {
+    border-bottom: none;
+}
+
+.exp-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+.exp-company {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.exp-period {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.exp-desc {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive design */
+@media (max-width: 968px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+        padding: 40px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 30px 20px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sidebar-name {
+        font-size: 1.3rem;
+    }
+
+    .main-content {
+        padding: 25px 15px;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+}
+

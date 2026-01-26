@@ -1,0 +1,196 @@
+/* ================================
+   Digital Business Card Template 3
+   ================================
+   
+   Minimalist single-color design.
+   Clean and elegant.
+   
+   HOW TO CUSTOMIZE:
+   - Change primary color
+   - Adjust spacing
+   - Modify typography
+   ================================ */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    padding: 20px;
+}
+
+/* Business Card Container */
+.business-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    max-width: 420px;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.business-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Avatar Section */
+.avatar-section {
+    margin-bottom: 25px;
+}
+
+.avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Content Section */
+.content-section {
+    text-align: center;
+}
+
+/* Name */
+.name {
+    font-size: 1.9rem;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+/* Title */
+.title {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+/* Divider */
+.divider {
+    width: 50px;
+    height: 2px;
+    background: #333;
+    margin: 0 auto 25px;
+}
+
+/* Contact Information */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-label {
+    font-size: 0.85rem;
+    color: #999;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contact-value {
+    font-size: 0.95rem;
+    color: #333;
+    font-weight: 400;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    padding: 8px 16px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: #333;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .business-card {
+        max-width: 100%;
+        padding: 30px 20px;
+    }
+
+    .avatar {
+        width: 90px;
+        height: 90px;
+    }
+
+    .name {
+        font-size: 1.6rem;
+    }
+
+    .title {
+        font-size: 0.9rem;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .contact-label {
+        font-size: 0.8rem;
+    }
+
+    .contact-value {
+        font-size: 0.9rem;
+    }
+
+    .social-links {
+        gap: 10px;
+    }
+
+    .social-link {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        
+        <!-- Profile header -->
+        <header class="profile-header">
+            <img src="preview-images/image1.png" alt="Your Photo" class="avatar">
+            <div class="profile-info">
+                <h1 class="name">Your Name</h1>
+                <p class="tagline">Ph.D. Candidate in Computer Science at Stanford University</p>
+            </div>
+        </header>
+
+        <!-- Contact info bar -->
+        <div class="info-bar">
+            <div class="info-item">
+                <span class="info-label">Email</span>
+                <a href="mailto:your.email@stanford.edu" class="info-value">your.email@stanford.edu</a>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Links</span>
+                <div class="links-group">
+                    <a href="https://github.com/yourname" target="_blank">GitHub</a>
+                    <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">Scholar</a>
+                    <a href="https://linkedin.com/in/yourname" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <main class="main-content">
+            
+            <!-- About section -->
+            <section class="content-section">
+                <h2 class="section-heading">About Me</h2>
+                <p class="text-block">
+                    I am a Ph.D. candidate in Computer Science at Stanford University, working under the supervision 
+                    of Prof. [Advisor Name]. My research focuses on machine learning and artificial intelligence, 
+                    with particular interest in deep learning architectures and their applications to natural language 
+                    processing. Prior to my Ph.D., I received my Master's degree from MIT (2018-2020) and Bachelor's 
+                    degree from Tsinghua University (2014-2018). I have published 8 papers in top-tier conferences 
+                    including NeurIPS, ICML, and ICLR.
+                </p>
+            </section>
+
+            <!-- Interests section -->
+            <section class="content-section">
+                <h2 class="section-heading">Research Interests</h2>
+                <ul class="interest-list">
+                    <li>Machine Learning: Deep learning, neural architecture search, and transfer learning</li>
+                    <li>Natural Language Processing: Large language models, text generation, and semantic understanding</li>
+                    <li>Computer Vision: Object detection, image segmentation, and video analysis</li>
+                    <li>AI Ethics: Fairness, interpretability, and responsible AI systems</li>
+                </ul>
+            </section>
+
+            <!-- Education section -->
+            <section class="content-section">
+                <h2 class="section-heading">Education</h2>
+                <div class="card">
+                    <div class="card-title">Ph.D. in Computer Science</div>
+                    <div class="card-subtitle">Stanford University, Sep 2020 - Present (Expected: Jun 2025)<br>
+                    Advisor: Prof. [Advisor Name] | GPA: 3.9/4.0</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">M.S. in Computer Science</div>
+                    <div class="card-subtitle">Massachusetts Institute of Technology (MIT), Sep 2018 - Jun 2020<br>
+                    GPA: 3.9/4.0 | Graduated with Distinction</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">B.S. in Computer Science</div>
+                    <div class="card-subtitle">Tsinghua University, Sep 2014 - Jun 2018<br>
+                    GPA: 3.8/4.0 | Graduated with Honors</div>
+                </div>
+            </section>
+
+            <!-- Publications section -->
+            <section class="content-section">
+                <h2 class="section-heading">Publications</h2>
+                <div class="card">
+                    <div class="card-title">Title of Your Paper: A Novel Approach to Solving Important Problems</div>
+                    <div class="card-subtitle">Conference on Neural Information Processing Systems (NeurIPS), 2024</div>
+                    <div class="card-links">
+                        <a href="#" target="_blank">Paper</a>
+                        <a href="#" target="_blank">Code</a>
+                        <a href="#" target="_blank">Slides</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Another Important Paper: Exploring New Frontiers in AI</div>
+                    <div class="card-subtitle">International Conference on Machine Learning (ICML), 2023</div>
+                    <div class="card-links">
+                        <a href="#" target="_blank">Paper</a>
+                        <a href="#" target="_blank">Code</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Third Publication: Contributions to the Field</div>
+                    <div class="card-subtitle">Journal of Machine Learning Research (JMLR), 2023</div>
+                    <div class="card-links">
+                        <a href="#" target="_blank">Paper</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience section -->
+            <section class="content-section">
+                <h2 class="section-heading">Experience</h2>
+                <div class="card">
+                    <div class="card-title">Research Intern</div>
+                    <div class="card-subtitle">Google Research, Mountain View, CA<br>
+                    Jun 2023 - Sep 2023 (4 months) | Worked on large language models and multimodal AI systems</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Research Assistant</div>
+                    <div class="card-subtitle">Stanford AI Lab, Stanford, CA<br>
+                    Sep 2020 - Present (4+ years) | Published 3 first-author papers and 5 co-authored papers</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Software Engineering Intern</div>
+                    <div class="card-subtitle">Microsoft Research, Redmond, WA<br>
+                    Jun 2019 - Aug 2019 (3 months) | Developed machine learning pipelines for cloud services</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Teaching Assistant</div>
+                    <div class="card-subtitle">MIT Computer Science Department, Cambridge, MA<br>
+                    Sep 2018 - May 2020 (2 years) | Assisted in teaching machine learning and algorithms courses</div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="page-footer">
+            <p>Last updated: <span id="current-date"></span></p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Set current date
+        const now = new Date();
+        const dateStr = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        document.getElementById('current-date').textContent = dateStr;
+    </script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+/* ================================
+   Digital Business Card Template
+   ================================
+   
+   A modern, compact digital business card design.
+   Perfect for sharing contact information and social links.
+   
+   HOW TO CUSTOMIZE:
+   - Change card background gradient
+   - Modify colors and spacing
+   - Adjust avatar size
+   - Customize social link icons
+   ================================ */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+/* Business Card Container */
+.business-card {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.business-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+}
+
+/* Card Header */
+.card-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 40px 30px 30px;
+    text-align: center;
+    position: relative;
+}
+
+.avatar-container {
+    display: inline-block;
+    position: relative;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px solid white;
+    object-fit: cover;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+/* Card Body */
+.card-body {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Name */
+.name {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Title */
+.title {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* Contact Information */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+}
+
+.contact-text {
+    font-weight: 400;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.social-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f5f5f5;
+    color: #666;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.social-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* QR Code Section */
+.qr-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.qr-label {
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.qr-code {
+    display: inline-block;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.qr-code img {
+    display: block;
+    width: 120px;
+    height: 120px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .business-card {
+        max-width: 100%;
+        border-radius: 16px;
+    }
+
+    .card-header {
+        padding: 30px 20px 20px;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border-width: 5px;
+    }
+
+    .card-body {
+        padding: 25px 20px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: 0.9rem;
+    }
+
+    .contact-item {
+        font-size: 0.9rem;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-link svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+

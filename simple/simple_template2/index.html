@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        
+        <!-- Profile section - Centered -->
+        <section class="profile-section">
+            <img src="preview-images/image1.png" alt="Your Photo" class="profile-photo">
+            <h1 class="name">Your Name</h1>
+            <p class="subtitle">Ph.D. Candidate in Computer Science</p>
+            <div class="contact-brief">
+                <a href="mailto:your.email@stanford.edu">your.email@stanford.edu</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/yourname" target="_blank" class="social-link">GitHub</a>
+                <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" class="social-link">Scholar</a>
+                <a href="https://linkedin.com/in/yourname" target="_blank" class="social-link">LinkedIn</a>
+        </div>
+        </section>
+
+        <!-- About section -->
+        <section class="content-section">
+            <h2 class="section-label">About</h2>
+            <p class="section-text">
+                I am a Ph.D. candidate in Computer Science at Stanford University, where I conduct research 
+                on machine learning and artificial intelligence. My work focuses on developing novel deep 
+                learning architectures and applying them to solve challenging problems in natural language 
+                processing and computer vision. I am passionate about making AI systems more efficient, 
+                interpretable, and beneficial for society.
+            </p>
+        </section>
+
+        <!-- Interests section -->
+        <section class="content-section">
+            <h2 class="section-label">Interests</h2>
+            <p class="section-text">
+                Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, AI Ethics, 
+                Neural Architecture Search, Large Language Models
+            </p>
+        </section>
+
+        <!-- Education section -->
+        <section class="content-section">
+            <h2 class="section-label">Education</h2>
+            <div class="item-list">
+                <div class="item">
+                    <span class="item-title">Ph.D. in Computer Science</span>
+                    <span class="item-meta">Stanford University, Sep 2020 - Present (Expected: Jun 2025)</span>
+                </div>
+                <div class="item">
+                    <span class="item-title">M.S. in Computer Science</span>
+                    <span class="item-meta">Massachusetts Institute of Technology (MIT), Sep 2018 - Jun 2020</span>
+                </div>
+                <div class="item">
+                    <span class="item-title">B.S. in Computer Science</span>
+                    <span class="item-meta">Tsinghua University, Sep 2014 - Jun 2018</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications section -->
+        <section class="content-section">
+            <h2 class="section-label">Publications</h2>
+            <div class="item-list">
+                <div class="item">
+                    <span class="item-title">Title of Your Paper: A Novel Approach to Solving Important Problems</span>
+                    <span class="item-meta">NeurIPS 2024</span>
+                    <div class="item-links">
+                        <a href="#" target="_blank">Paper</a>
+                        <a href="#" target="_blank">Code</a>
+                        <a href="#" target="_blank">Slides</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="item-title">Another Important Paper: Exploring New Frontiers in AI</span>
+                    <span class="item-meta">ICML 2023</span>
+                    <div class="item-links">
+                        <a href="#" target="_blank">Paper</a>
+                        <a href="#" target="_blank">Code</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="item-title">Third Publication: Contributions to the Field</span>
+                    <span class="item-meta">JMLR 2023</span>
+                    <div class="item-links">
+                        <a href="#" target="_blank">Paper</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience section -->
+        <section class="content-section">
+            <h2 class="section-label">Experience</h2>
+            <div class="item-list">
+                <div class="item">
+                    <span class="item-title">Research Intern</span>
+                    <span class="item-meta">Google Research, Jun 2023 - Sep 2023 (4 months)</span>
+                </div>
+                <div class="item">
+                    <span class="item-title">Research Assistant</span>
+                    <span class="item-meta">Stanford AI Lab, Sep 2020 - Present (4+ years)</span>
+                </div>
+                <div class="item">
+                    <span class="item-title">Software Engineering Intern</span>
+                    <span class="item-meta">Microsoft Research, Jun 2019 - Aug 2019 (3 months)</span>
+                </div>
+                <div class="item">
+                    <span class="item-title">Teaching Assistant</span>
+                    <span class="item-meta">MIT CS Department, Sep 2018 - May 2020 (2 years)</span>
+                </div>
+        </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Last updated <span id="current-date"></span></p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Set current date
+        const now = new Date();
+        const dateStr = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        document.getElementById('current-date').textContent = dateStr;
+    </script>
+</body>
+</html>
