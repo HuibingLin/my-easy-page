@@ -291,6 +291,11 @@ body {
         margin-left: 200px;
         padding: 40px 40px;
     }
+
+    .page-footer {
+        margin-left: 200px;
+        padding: 25px 40px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -319,6 +324,11 @@ body {
     .section-title {
         font-size: 1.5rem;
     }
+
+    .page-footer {
+        margin-left: 0;
+        padding: 25px 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -338,5 +348,27 @@ body {
     .section-title {
         font-size: 1.3rem;
     }
+}
+
+/* Footer */
+.page-footer {
+    margin-left: 250px;
+    margin-top: 60px;
+    padding: 25px 60px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #999;
+    border-top: 1px solid #e0e0e0;
+}
+
+.page-footer a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.page-footer a:hover {
+    color: #333;
+    text-decoration: underline;
 }
 
