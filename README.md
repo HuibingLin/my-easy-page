@@ -29,36 +29,33 @@ That's it! No build process, no dependencies, no complicated setup.
 my-easy-page/
 ├── index.html                      # Gallery page (START HERE!)
 ├── README.md                       # This file
-│
-├── academic/                       # Templates for academics
-│   ├── minimal-cv/                # Clean CV-style layout
-│   ├── research-focus/            # Highlight research areas
-│   └── lab-member/                # For PhD students & lab members
+├── GETTING_STARTED.md              # Quick start guide
+├── LICENSE                         # License file
 │
 ├── professional/                   # Templates for professionals
-│   ├── developer/                 # For software developers
-│   ├── designer/                  # For UI/UX designers
-│   └── product-manager/           # For product managers
+│   ├── professional_template1/    # Visual-first template for designers
+│   ├── professional_template2/    # Tech-focused template for developers
+│   └── professional_template3/    # Professional template for PMs
 │
 ├── simple/                         # Minimalist templates
-│   ├── one-page/                  # Single page link-in-bio style
-│   └── card-style/                # Elegant card design
+│   ├── simple_template1/          # Academic minimalist style
+│   ├── simple_template2/          # Ultra-minimal centered design
+│   ├── simple_template3/          # Dark accent minimalist design
+│   ├── simple_template4/          # Warm earth tone design
+│   ├── simple_template5/          # (See template for details)
+│   ├── simple_template6/          # (See template for details)
+│   └── simple_template7/          # (See template for details)
 │
-└── assets/
-    └── preview-images/            # Template preview images
+├── business-card/                  # Digital business card templates
+│   ├── business-card_template1/   # Modern compact business card
+│   ├── business-card_template2/   # (See template for details)
+│   ├── business-card_template3/   # (See template for details)
+│   └── business-card_template4/   # (See template for details)
+│
+└── assets/                         # Shared assets
 ```
 
 ## Template Categories
-
-### Academic
-
-Perfect for researchers, professors, and students.
-
-| Template | Best For | Key Features |
-|----------|----------|--------------|
-| **Minimal CV** | Professors, Researchers | Publications list, Teaching sections, Clean typography |
-| **Research Focus** | Research-focused academics | Highlight research areas, Projects showcase, Team section |
-| **Lab Member** | PhD students, Postdocs | Simple profile, Education history, News updates |
 
 ### Professional
 
@@ -66,18 +63,30 @@ Designed for working professionals across industries.
 
 | Template | Best For | Key Features |
 |----------|----------|--------------|
-| **Developer** | Software Engineers | Project portfolio, Skills showcase, Tech-focused design |
-| **Designer** | UI/UX Designers | Visual portfolio grid, Image-focused layout, Creative style |
-| **Product Manager** | Product Managers | Metrics & stats, Timeline layout, Product showcase |
+| **Professional Template 1** | UI/UX Designers | Visual portfolio grid, Image-focused layout, Creative style |
+| **Professional Template 2** | Software Engineers | Project portfolio, Skills showcase, Tech-focused design |
+| **Professional Template 3** | Product Managers | Metrics & stats, Timeline layout, Product showcase |
 
 ### Simple
 
-Minimalist templates for anyone who wants a clean online presence.
+Minimalist templates for anyone who wants a clean online presence. Perfect for academics, researchers, and anyone who prefers simplicity.
 
 | Template | Best For | Key Features |
 |----------|----------|--------------|
-| **One Page** | Everyone | Link-in-bio style, Single screen, Social links |
-| **Card Style** | Everyone | Business card design, Centered layout, Professional |
+| **Simple Template 1** | Academics, Researchers | Academic minimalist style, Traditional layout, Organized sections |
+| **Simple Template 2** | Everyone | Ultra-minimal centered design, Generous white space, Single-column layout |
+| **Simple Template 3** | Everyone | Dark accent minimalist design, Timeline layout, Bold typography |
+| **Simple Template 4** | Everyone | Warm earth tone design, Card-based layout, Terracotta accents |
+| **Simple Template 5-7** | Everyone | Various minimalist styles | See individual template READMEs for details |
+
+### Business Card
+
+Digital business card templates perfect for sharing contact information and social links.
+
+| Template | Best For | Key Features |
+|----------|----------|--------------|
+| **Business Card Template 1** | Everyone | Modern compact design, Contact info, Social links, QR code support |
+| **Business Card Template 2-4** | Everyone | Various business card styles | See individual template READMEs for details |
 
 ## How to Use
 
