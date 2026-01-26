@@ -23,10 +23,12 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 20px;
+    padding: 20px 20px 70px 20px;
+    position: relative;
 }
 
 /* Business Card Container */
@@ -220,5 +222,30 @@ body {
         width: 18px;
         height: 18px;
     }
+}
+
+/* Footer Styles */
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 15px 20px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    z-index: 100;
+}
+
+.page-footer a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.page-footer a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
 }
 
