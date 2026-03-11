@@ -4,12 +4,12 @@
 
 🌐 **Live Demo:** [https://huibinglin.github.io/my-easy-page/](https://huibinglin.github.io/my-easy-page/)
 
-A collection of clean, professional HTML templates for academics, professionals, and anyone who wants a simple personal homepage. No coding knowledge required - just download, edit, and publish!
+A collection of clean, professional HTML templates for academics, professionals, and anyone who wants a simple personal homepage. No coding knowledge required - just fork, edit, and publish!
 
 ## Why My Easy Page?
 
 - **No coding required** - Just edit text content
-- **Instant preview** - See all templates before downloading
+- **Instant preview** - See all templates before using
 - **Fully responsive** - Works perfectly on all devices
 - **Self-contained** - Each template is just HTML + CSS
 - **Well documented** - Clear instructions and comments in every file
@@ -19,9 +19,9 @@ A collection of clean, professional HTML templates for academics, professionals,
 
 1. **Browse** - Visit [https://huibinglin.github.io/my-easy-page/](https://huibinglin.github.io/my-easy-page/) or open `index.html` in your browser to preview all templates
 2. **Choose** - Click on a template you like
-3. **Download** - Download the template folder (HTML + CSS files)
-4. **Edit** - Open HTML file in any text editor and replace example content with yours
-5. **Publish** - Upload to your web hosting or GitHub Pages
+3. **Fork** - Click **Fork** to create your own GitHub repository with that template
+4. **Edit** - Clone your fork locally, then open the HTML file in any text editor and replace example content with yours
+5. **Publish** - Push changes and enable GitHub Pages, or deploy to your preferred hosting
 
 That's it! No build process, no dependencies, no complicated setup.
 
@@ -98,16 +98,16 @@ Visit [https://huibinglin.github.io/my-easy-page/](https://huibinglin.github.io/
 
 ### Step 2: Choose Your Template
 
-Click "Download" to open the template folder, or click "Preview" to see it full-screen.
+Click **Fork** on the template you like to create your own copy on GitHub, or click **Preview** to see it full-screen.
 
-### Step 3: Download Files
+### Step 3: Get the Files
 
-Each template folder contains:
+Each forked template repository contains:
 - `index.html` - The webpage file
 - `style.css` - The styling file
 - `README.md` - Detailed instructions for that template
 
-Download both HTML and CSS files to your computer.
+Clone your fork (or download it as a ZIP from GitHub) to your computer so you can edit the files locally.
 
 ### Step 4: Edit Your Content
 
