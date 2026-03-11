@@ -179,6 +179,83 @@
             background: #e0e0e0;
         }
 
+        /* Fork-to-GitHub button */
+        .btn-fork {
+            background: #24292e;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .btn-fork:hover {
+            background: #1a1f24;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .btn-fork svg {
+            flex-shrink: 0;
+        }
+
+        /* Fork count badge shown below the action buttons */
+        .fork-count {
+            font-size: 0.78rem;
+            color: #888;
+            text-align: right;
+            margin-top: 6px;
+        }
+
+        .fork-count span {
+            font-weight: 600;
+            color: #555;
+        }
+
+        /* Toast notification */
+        .toast {
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            z-index: 9999;
+            padding: 14px 22px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            max-width: 420px;
+            animation: slideIn 0.3s ease;
+        }
+
+        .toast.success {
+            background: #10b981;
+            color: white;
+        }
+
+        .toast.error {
+            background: #ef4444;
+            color: white;
+        }
+
+        .toast.info {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .toast a {
+            color: white;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-12px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
         footer {
             text-align: center;
             color: white;
@@ -293,8 +370,12 @@
                         <p>Visual-first template for designers. Display your portfolio and creative work beautifully.</p>
                         <div class="template-actions">
                             <a href="professional/professional_template1/index.html" target="_blank" class="btn btn-secondary">Preview</a>
-                            <a href="#" onclick="downloadTemplate('professional/professional_template1'); return false;" class="btn btn-primary">Download</a>
+                            <a href="#" onclick="forkTemplate('professional/professional_template1'); return false;" class="btn btn-fork">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg>
+                                Fork
+                            </a>
                         </div>
+                        <div class="fork-count" data-template="professional/professional_template1">Forked <span>0</span> times</div>
                     </div>
                 </div>
 
@@ -308,8 +389,12 @@
                         <p>Modern tech-focused homepage for software developers. Showcase your skills and projects.</p>
                         <div class="template-actions">
                             <a href="professional/professional_template2/index.html" target="_blank" class="btn btn-secondary">Preview</a>
-                            <a href="#" onclick="downloadTemplate('professional/professional_template2'); return false;" class="btn btn-primary">Download</a>
+                            <a href="#" onclick="forkTemplate('professional/professional_template2'); return false;" class="btn btn-fork">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg>
+                                Fork
+                            </a>
                         </div>
+                        <div class="fork-count" data-template="professional/professional_template2">Forked <span>0</span> times</div>
                     </div>
                 </div>
 
@@ -323,8 +408,12 @@
                         <p>Professional template for PMs. Highlight your products and achievements.</p>
                         <div class="template-actions">
                             <a href="professional/professional_template3/index.html" target="_blank" class="btn btn-secondary">Preview</a>
-                            <a href="#" onclick="downloadTemplate('professional/professional_template3'); return false;" class="btn btn-primary">Download</a>
+                            <a href="#" onclick="forkTemplate('professional/professional_template3'); return false;" class="btn btn-fork">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg>
+                                Fork
+                            </a>
                         </div>
+                        <div class="fork-count" data-template="professional/professional_template3">Forked <span>0</span> times</div>
                     </div>
                 </div>
             </div>
@@ -347,8 +436,12 @@
                         <p>Academic minimalist style with traditional layout. Clean design with organized sections for research profiles.</p>
                         <div class="template-actions">
                             <a href="simple/simple_template1/index.html" target="_blank" class="btn btn-secondary">Preview</a>
-                            <a href="#" onclick="downloadTemplate('simple/simple_template1'); return false;" class="btn btn-primary">Download</a>
+                            <a href="#" onclick="forkTemplate('simple/simple_template1'); return false;" class="btn btn-fork">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg>
+                                Fork
+                            </a>
                         </div>
+                        <div class="fork-count" data-template="simple/simple_template1">Forked <span>0</span> times</div>
                     </div>
                 </div>
 
@@ -362,8 +455,12 @@
                         <p>Ultra-minimal centered design with generous white space. Clean and modern single-column layout.</p>
                         <div class="template-actions">
                             <a href="simple/simple_template2/index.html" target="_blank" class="btn btn-secondary">Preview</a>
-                            <a href="#" onclick="downloadTemplate('simple/simple_template2'); return false;" class="btn btn-primary">Download</a>
+                            <a href="#" onclick="forkTemplate('simple/simple_template2'); return false;" class="btn btn-fork">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg>
+                                Fork
+                            </a>
                         </div>
+                        <div class="fork-count" data-template="simple/simple_template2">Forked <span>0</span> times</div>
                     </div>
                 </div>
 
@@ -377,8 +474,12 @@
                         <p>Dark accent minimalist design with timeline layout. Clean typography with bold black elements.</p>
                         <div class="template-actions">
                             <a href="simple/simple_template3/index.html" target="_blank" class="btn btn-secondary">Preview</a>
-                            <a href="#" onclick="downloadTemplate('simple/simple_template3'); return false;" class="btn btn-primary">Download</a>
+                            <a href="#" onclick="forkTemplate('simple/simple_template3'); return false;" class="btn btn-fork">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg>
+                                Fork
+                            </a>
                         </div>
+                        <div class="fork-count" data-template="simple/simple_template3">Forked <span>0</span> times</div>
                     </div>
                 </div>
 
@@ -392,8 +493,12 @@
                         <p>Warm earth tone design with card-based layout. Inviting terracotta accents and clean structure.</p>
                         <div class="template-actions">
                             <a href="simple/simple_template4/index.html" target="_blank" class="btn btn-secondary">Preview</a>
-                            <a href="#" onclick="downloadTemplate('simple/simple_template4'); return false;" class="btn btn-primary">Download</a>
+                            <a href="#" onclick="forkTemplate('simple/simple_template4'); return false;" class="btn btn-fork">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg>
+                                Fork
+                            </a>
                         </div>
+                        <div class="fork-count" data-template="simple/simple_template4">Forked <span>0</span> times</div>
                     </div>
                 </div>
 
@@ -407,8 +512,12 @@
                         <p>Left sidebar navigation design with profile photo. Classic academic layout with smooth navigation between sections.</p>
                         <div class="template-actions">
                             <a href="simple/simple_template5/index.html" target="_blank" class="btn btn-secondary">Preview</a>
-                            <a href="#" onclick="downloadTemplate('simple/simple_template5'); return false;" class="btn btn-primary">Download</a>
+                            <a href="#" onclick="forkTemplate('simple/simple_template5'); return false;" class="btn btn-fork">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg>
+                                Fork
+                            </a>
                         </div>
+                        <div class="fork-count" data-template="simple/simple_template5">Forked <span>0</span> times</div>
                     </div>
                 </div>
 
@@ -422,8 +531,12 @@
                         <p>Classic academic layout with traditional header. Timeline-style education and experience sections with clear organization.</p>
                         <div class="template-actions">
                             <a href="simple/simple_template6/index.html" target="_blank" class="btn btn-secondary">Preview</a>
-                            <a href="#" onclick="downloadTemplate('simple/simple_template6'); return false;" class="btn btn-primary">Download</a>
+                            <a href="#" onclick="forkTemplate('simple/simple_template6'); return false;" class="btn btn-fork">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg>
+                                Fork
+                            </a>
                         </div>
+                        <div class="fork-count" data-template="simple/simple_template6">Forked <span>0</span> times</div>
                     </div>
                 </div>
 
@@ -437,8 +550,12 @@
                         <p>Card-based compact design with clean card layouts. Interest tags and organized information cards for easy reading.</p>
                         <div class="template-actions">
                             <a href="simple/simple_template7/index.html" target="_blank" class="btn btn-secondary">Preview</a>
-                            <a href="#" onclick="downloadTemplate('simple/simple_template7'); return false;" class="btn btn-primary">Download</a>
+                            <a href="#" onclick="forkTemplate('simple/simple_template7'); return false;" class="btn btn-fork">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg>
+                                Fork
+                            </a>
                         </div>
+                        <div class="fork-count" data-template="simple/simple_template7">Forked <span>0</span> times</div>
                     </div>
                 </div>
             </div>
@@ -461,8 +578,12 @@
                         <p>Modern digital business card with contact info, social links, and QR code. Perfect for networking and sharing your details.</p>
                         <div class="template-actions">
                             <a href="business-card/business-card_template1/index.html" target="_blank" class="btn btn-secondary">Preview</a>
-                            <a href="#" onclick="downloadTemplate('business-card/business-card_template1'); return false;" class="btn btn-primary">Download</a>
+                            <a href="#" onclick="forkTemplate('business-card/business-card_template1'); return false;" class="btn btn-fork">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg>
+                                Fork
+                            </a>
                         </div>
+                        <div class="fork-count" data-template="business-card/business-card_template1">Forked <span>0</span> times</div>
                     </div>
                 </div>
 
@@ -476,8 +597,12 @@
                         <p>Horizontal layout design with avatar on the left. Compact and professional, perfect for a clean business presentation.</p>
                         <div class="template-actions">
                             <a href="business-card/business-card_template2/index.html" target="_blank" class="btn btn-secondary">Preview</a>
-                            <a href="#" onclick="downloadTemplate('business-card/business-card_template2'); return false;" class="btn btn-primary">Download</a>
+                            <a href="#" onclick="forkTemplate('business-card/business-card_template2'); return false;" class="btn btn-fork">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg>
+                                Fork
+                            </a>
                         </div>
+                        <div class="fork-count" data-template="business-card/business-card_template2">Forked <span>0</span> times</div>
                     </div>
                 </div>
 
@@ -491,8 +616,12 @@
                         <p>Minimalist single-color design with clean typography. Simple and elegant, ideal for a professional look.</p>
                         <div class="template-actions">
                             <a href="business-card/business-card_template3/index.html" target="_blank" class="btn btn-secondary">Preview</a>
-                            <a href="#" onclick="downloadTemplate('business-card/business-card_template3'); return false;" class="btn btn-primary">Download</a>
+                            <a href="#" onclick="forkTemplate('business-card/business-card_template3'); return false;" class="btn btn-fork">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg>
+                                Fork
+                            </a>
                         </div>
+                        <div class="fork-count" data-template="business-card/business-card_template3">Forked <span>0</span> times</div>
                     </div>
                 </div>
 
@@ -506,16 +635,20 @@
                         <p>Modern design with vibrant gradient background and pattern effects. Eye-catching and contemporary style.</p>
                         <div class="template-actions">
                             <a href="business-card/business-card_template4/index.html" target="_blank" class="btn btn-secondary">Preview</a>
-                            <a href="#" onclick="downloadTemplate('business-card/business-card_template4'); return false;" class="btn btn-primary">Download</a>
+                            <a href="#" onclick="forkTemplate('business-card/business-card_template4'); return false;" class="btn btn-fork">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg>
+                                Fork
+                            </a>
                         </div>
+                        <div class="fork-count" data-template="business-card/business-card_template4">Forked <span>0</span> times</div>
                     </div>
                 </div>
             </div>
         </section>
 
         <footer>
-            <p><strong>How to use:</strong> Click "Download" to get a ZIP file containing all template files (index.html, style.css, README.md).</p>
-            <p>Extract the ZIP file, edit the HTML file with your information, and you're ready to go!</p>
+            <p><strong>How to use:</strong> Click <strong>Download</strong> to get a ZIP, or click <strong>Fork</strong> to copy the template directly into your own GitHub repository.</p>
+            <p>Extract or fork → edit the HTML file with your information → publish!</p>
             <p>Open source project | <a href="https://github.com/HuibingLin/my-easy-page">View on GitHub</a></p>
         </footer>
     </div>
@@ -538,9 +671,12 @@
     <!-- JSZip library for creating ZIP files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script>
+        // Base URL of the Vercel backend. Replace with your actual deployment URL after deploying.
+        const API_BASE = 'https://my-easy-page-api.vercel.app';
+
+        // ── Download (ZIP) ────────────────────────────────────────────────────
         async function downloadTemplate(templatePath) {
             try {
-                // Show loading state
                 const btn = event.target;
                 const originalText = btn.textContent;
                 btn.textContent = 'Downloading...';
@@ -548,44 +684,31 @@
                 btn.style.opacity = '0.7';
                 btn.style.cursor = 'wait';
 
-                // Create a new JSZip instance
                 const zip = new JSZip();
-
-                // Files to include in the ZIP
                 const files = ['index.html', 'style.css', 'README.md'];
                 const templateName = templatePath.split('/').pop();
 
-                // Fetch and add each file to the ZIP
                 let filesAdded = 0;
                 for (const file of files) {
                     try {
                         const response = await fetch(`${templatePath}/${file}`);
                         if (response.ok) {
-                            const content = await response.text();
-                            zip.file(file, content);
+                            zip.file(file, await response.text());
                             filesAdded++;
-                        } else {
-                            console.warn(`Could not fetch ${file}: ${response.status}`);
                         }
-                    } catch (error) {
-                        console.warn(`Could not fetch ${file}:`, error);
-                        // Continue with other files even if one fails
+                    } catch (e) {
+                        console.warn(`Could not fetch ${file}:`, e);
                     }
                 }
 
-                // Check if we got at least the essential files
-                if (filesAdded === 0) {
-                    throw new Error('Could not download any files. Please try downloading manually.');
-                }
+                if (filesAdded === 0) throw new Error('Could not download any files.');
 
-                // Generate ZIP file
-                const zipBlob = await zip.generateAsync({ 
+                const zipBlob = await zip.generateAsync({
                     type: 'blob',
                     compression: 'DEFLATE',
                     compressionOptions: { level: 6 }
                 });
 
-                // Create download link
                 const url = URL.createObjectURL(zipBlob);
                 const a = document.createElement('a');
                 a.href = url;
@@ -595,28 +718,15 @@
                 document.body.removeChild(a);
                 URL.revokeObjectURL(url);
 
-                // Reset button
                 btn.textContent = originalText;
                 btn.disabled = false;
                 btn.style.opacity = '1';
                 btn.style.cursor = 'pointer';
 
-                // Show success message briefly
-                const successMsg = document.createElement('div');
-                successMsg.textContent = 'Download started!';
-                successMsg.style.cssText = 'position: fixed; top: 20px; right: 20px; background: #10b981; color: white; padding: 12px 24px; border-radius: 6px; z-index: 10000; box-shadow: 0 4px 12px rgba(0,0,0,0.2);';
-                document.body.appendChild(successMsg);
-                setTimeout(() => {
-                    successMsg.remove();
-                }, 2000);
-
+                showToast('success', 'Download started!');
             } catch (error) {
                 console.error('Error creating ZIP:', error);
-                
-                // Show error message
-                alert('Download failed: ' + error.message + '\n\nPlease try downloading the files manually from the template folder.');
-                
-                // Reset button
+                showToast('error', 'Download failed: ' + error.message);
                 const btn = event.target;
                 btn.textContent = 'Download';
                 btn.disabled = false;
@@ -625,8 +735,94 @@
             }
         }
 
+        // ── Fork to GitHub ────────────────────────────────────────────────────
+        // Redirects the user to the GitHub OAuth flow.
+        // The backend will create a new repo containing only this template's files,
+        // then redirect back here with the result in query params.
+        function forkTemplate(templatePath) {
+            // Store the intended template path so we can highlight it on return
+            sessionStorage.setItem('pendingFork', templatePath);
+            // Send the user through GitHub OAuth; state carries the template path
+            window.location.href = `${API_BASE}/api/auth/github?state=${encodeURIComponent(templatePath)}`;
+        }
+
+        // ── Handle OAuth return ───────────────────────────────────────────────
+        // Called once on page load to check if we just returned from the OAuth flow.
+        function handleOAuthReturn() {
+            const params = new URLSearchParams(window.location.search);
+
+            if (params.has('forked')) {
+                const repoUrl  = decodeURIComponent(params.get('repo_url') || '');
+                const template = decodeURIComponent(params.get('template') || '');
+                showToast(
+                    'success',
+                    `Template forked! <a href="${repoUrl}" target="_blank" rel="noopener">View your new repo →</a>`
+                );
+                // Increment the displayed count optimistically without waiting for a reload
+                if (template) bumpDisplayedCount(template);
+            }
+
+            if (params.has('fork_exists')) {
+                const repoUrl = decodeURIComponent(params.get('repo_url') || '');
+                showToast(
+                    'info',
+                    `You already have this template. <a href="${repoUrl}" target="_blank" rel="noopener">View it →</a>`
+                );
+            }
+
+            if (params.has('fork_error')) {
+                showToast('error', 'Fork failed: ' + decodeURIComponent(params.get('fork_error')));
+            }
+
+            // Remove query params from URL without reloading the page
+            if (params.has('forked') || params.has('fork_exists') || params.has('fork_error')) {
+                window.history.replaceState({}, '', window.location.pathname);
+            }
+        }
+
+        // ── Load fork counts from the backend ────────────────────────────────
+        async function loadForkCounts() {
+            try {
+                const res = await fetch(`${API_BASE}/api/counts`);
+                if (!res.ok) return;
+                const counts = await res.json();
+
+                // Update every fork-count badge on the page
+                document.querySelectorAll('.fork-count[data-template]').forEach(el => {
+                    const key   = el.dataset.template;
+                    const count = counts[key] || 0;
+                    el.querySelector('span').textContent = count;
+                    // Hide the badge entirely when count is 0 to keep the UI clean
+                    el.style.display = count > 0 ? '' : 'none';
+                });
+            } catch (e) {
+                // Silently ignore network errors – counts are non-critical
+                console.warn('Could not load fork counts:', e);
+            }
+        }
+
+        // ── Helpers ───────────────────────────────────────────────────────────
+
+        // Bump the displayed count for one template by 1 (optimistic update).
+        function bumpDisplayedCount(templatePath) {
+            const el = document.querySelector(`.fork-count[data-template="${templatePath}"]`);
+            if (!el) return;
+            const span  = el.querySelector('span');
+            const count = (parseInt(span.textContent, 10) || 0) + 1;
+            span.textContent = count;
+            el.style.display = '';
+        }
+
+        // Display a toast notification that auto-dismisses after 5 seconds.
+        function showToast(type, html) {
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+            toast.innerHTML = html;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 5000);
+        }
+
         function showDownloadInstructions(templatePath) {
-            // Instead of showing modal, try to download directly
             downloadTemplate(templatePath);
         }
 
@@ -634,22 +830,20 @@
             document.getElementById('downloadModal').classList.remove('active');
         }
 
-        // Close modal when clicking outside
         const modal = document.getElementById('downloadModal');
         if (modal) {
             modal.addEventListener('click', function(e) {
-                if (e.target === this) {
-                    closeDownloadInstructions();
-                }
+                if (e.target === this) closeDownloadInstructions();
             });
         }
 
-        // Close modal with Escape key
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                closeDownloadInstructions();
-            }
+            if (e.key === 'Escape') closeDownloadInstructions();
         });
+
+        // Run on page load
+        handleOAuthReturn();
+        loadForkCounts();
     </script>
 </body>
 </html>
