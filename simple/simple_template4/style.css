@@ -24,6 +24,13 @@ body {
     color: #3e3e3e;
     background: #fefdf8;
     padding: 50px 20px;
+    overflow-x: hidden;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -106,18 +113,26 @@ body {
 
 .links-group {
     display: inline-flex;
-    gap: 15px;
+    gap: 12px;
 }
 
-.links-group a {
-    color: #444;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: color 0.2s ease;
+.social-icon {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
 }
 
-.links-group a:hover {
-    color: #c87941;
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.social-icon:hover {
+    opacity: 0.75;
 }
 
 /* Main content */

@@ -29,6 +29,13 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 20px 20px 70px 20px;
     position: relative;
+    overflow-x: hidden;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Business Card Container */
@@ -110,6 +117,7 @@ body {
     gap: 10px;
     font-size: 0.95rem;
     color: #555;
+    word-break: break-word;
 }
 
 .contact-icon {

@@ -24,6 +24,13 @@ body {
     color: #333;
     background: #ffffff;
     padding: 40px 20px;
+    overflow-x: hidden;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -77,16 +84,28 @@ body {
 
 .social-links {
     margin-top: 10px;
-    font-size: 0.9rem;
+    display: flex;
+    gap: 12px;
+    align-items: center;
 }
 
-.social-links a {
-    color: #0066cc;
-    text-decoration: none;
+.social-icon {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
 }
 
-.social-links a:hover {
-    text-decoration: underline;
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.social-icon:hover {
+    opacity: 0.75;
 }
 
 .profile-photo {

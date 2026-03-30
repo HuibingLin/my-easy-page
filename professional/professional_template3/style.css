@@ -34,6 +34,13 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Container */
@@ -69,6 +76,7 @@ body {
 .main-nav {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .main-nav a {

@@ -23,6 +23,13 @@ body {
     line-height: 1.6;
     color: #333;
     background: #ffffff;
+    overflow-x: hidden;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -108,14 +115,24 @@ body {
 }
 
 .social-icon {
-    font-size: 1.3rem;
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: #666;
-    transition: color 0.2s ease;
+    transition: opacity 0.2s ease;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    display: block;
 }
 
 .social-icon:hover {
-    color: #333;
+    opacity: 0.75;
 }
 
 /* Main content */

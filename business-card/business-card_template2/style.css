@@ -28,6 +28,13 @@ body {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     padding: 20px 20px 70px 20px;
     position: relative;
+    overflow-x: hidden;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Business Card Container */
@@ -103,6 +110,7 @@ body {
 .contact-item {
     font-size: 0.9rem;
     color: #555;
+    word-break: break-word;
 }
 
 .contact-text {

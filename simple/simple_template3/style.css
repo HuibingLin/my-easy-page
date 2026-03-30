@@ -24,6 +24,13 @@ body {
     color: #2a2a2a;
     background: #ffffff;
     padding: 50px 20px;
+    overflow-x: hidden;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -85,7 +92,7 @@ body {
 .contact-bar {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
     align-items: center;
     font-size: 0.9rem;
 }
@@ -100,8 +107,23 @@ body {
     color: #666;
 }
 
-.separator {
-    color: #ccc;
+.social-icon {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.social-icon:hover {
+    opacity: 0.75;
 }
 
 /* Section styling */
@@ -293,13 +315,7 @@ body {
     }
 
     .contact-bar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
-
-    .separator {
-        display: none;
+        gap: 10px;
     }
 
     .tag {

@@ -28,6 +28,13 @@ body {
     background: #f8f9fa;
     padding: 20px 20px 70px 20px;
     position: relative;
+    overflow-x: hidden;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Business Card Container */
@@ -125,6 +132,7 @@ body {
     font-size: 0.95rem;
     color: #333;
     font-weight: 400;
+    word-break: break-word;
 }
 
 /* Social Links */
