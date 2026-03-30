@@ -4,6 +4,8 @@
 
 🌐 **Live Demo:** [https://huibinglin.github.io/my-easy-page/](https://huibinglin.github.io/my-easy-page/)
 
+📘 **Tutorial:** Click [tutorial](./TUTORIAL.md) for a step-by-step GitHub setup guide.
+
 A collection of clean, professional HTML templates for academics, professionals, and anyone who wants a simple personal homepage. No coding knowledge required - just fork, edit, and publish!
 
 ## Why My Easy Page?
@@ -32,6 +34,7 @@ my-easy-page/
 ├── index.html                      # Gallery page (START HERE!)
 ├── README.md                       # This file
 ├── GETTING_STARTED.md              # Quick start guide
+├── TUTORIAL.md                     # Step-by-step GitHub Pages tutorial
 ├── LICENSE                         # License file
 │
 ├── professional/                   # Templates for professionals
